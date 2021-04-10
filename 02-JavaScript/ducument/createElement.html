@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            //现在需要我们使用is代码来创建html标签，并显示在页面上
+            // 标签内部是： <div>凯哥，我喜欢你</div>
+            var divObj  = document.createElement("div");//在内存中<div></div>
+
+
+
+            divObj.innerHTML = "凯哥，我喜欢你";//内存中 <div>凯哥，我喜欢你</div>
+
+            document.body.appendChild(divObj);//appenChild()  可以添加一个子节点，div就是要添加的孩子节点
+
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

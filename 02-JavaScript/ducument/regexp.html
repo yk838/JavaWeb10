@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <script type="text/javascript">
+        // var patt = new RegExp("e");
+        // alert(patt);
+
+        //表示要求字符串中，是否包含字母a或b或c
+        // var patt = /[abce]/;
+
+        //表示要求字符串，是否包含小写字母
+        // var patt = /[a-z] /;
+
+        //表示要求字符串，是否包含任意大写字母
+        // var  patt = /[A-Z]/;
+        //
+        // //表示要求字符串，是否包含任意数字
+        // var  patt = /[0-9]/;
+        //
+        // // \w元字符用来查找单词字符    单词字符包括：a-z、A-Z、0-9 以及下划线 包含 _（下划线)字符
+        //
+        // //表示要求字符串，是否包含任意数字
+        // var  patt = /\w/;
+
+        // // 表示要求 字符串中是否包含至少一个a
+        // var patt = /a+/;
+
+        //表示要求 字符串中是否包含零个或多个a
+        // var patt = /a*/;
+
+        //表示要求 字符串是否包含一个或零个a
+        // var patt = /a?/;
+
+        //表示要求 字符串是否包含连续三个a
+        // var patt = /a{3}/;
+
+        //表示要求 字符串 是否包含至少3个连续的a,最多5个连续的a
+        // var patt = /a{3,5}/;
+
+        //表示要求 字符串 是否包含至少3个连续a
+        // var patt = /a{3,}/;
+
+        //表示要求 字符串以a结尾
+        // var patt = /a$/;
+
+        //表示要求 字符串 以a开头
+        // var patt = /^a/;
+
+        //要求 字符串，从头到尾都必须完全匹配
+        // var patt = /^a{3,5}$/
+
+        var patt = /^\w{5,12}$/
+
+        var str = "[[baaaaa";
+
+        alert(patt.test(str ));//str字符串是否符合patt定义的规则(就是str中包含定义的patt)
+    </script>
+</head>
+<body>
+
+</body>
+</html>
